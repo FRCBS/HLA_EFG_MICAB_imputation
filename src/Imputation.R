@@ -22,13 +22,13 @@ genotypes <- hlaBED2Geno(bed.fn='/full/path/to/data/MHC.bed',
 ## imputation
 
 # load models
-model_MICA <- hlaModelFromObj(get(load('models/VI/MICA_model_VI.RData')))
-model_MICB <- hlaModelFromObj(get(load('models/VI/MICB_model_VI.RData')))
-model_HLA_E <- hlaModelFromObj(get(load('models/VI/HLA_E_model_VI.RData')))
-model_HLA_F <- hlaModelFromObj(get(load('models/VI/HLA_F_model_VI.RData')))
-model_HLA_G <- hlaModelFromObj(get(load('models/I/HLA_G_model_I.RData')))
-model_HLA_G_3UTR <- hlaModelFromObj(get(load('models/I/HLA_G_3UTR_model_I.RData')))
-model_HLA_G_5UTR <- hlaModelFromObj(get(load('models/I/HLA_G_5UTR_model_I.RData')))
+model_MICA <- hlaModelFromObj(get(load('models/path_to_model_MICA.RData')))
+model_MICB <- hlaModelFromObj(get(load('models/path_to_model_MICB.RData')))
+model_HLA_E <- hlaModelFromObj(get(load('models/path_to_model_HLA_E.RData')))
+model_HLA_F <- hlaModelFromObj(get(load('models/path_to_model_HLA_F.RData')))
+model_HLA_G <- hlaModelFromObj(get(load('models/path_to_model_HLA_G.RData')))
+model_HLA_G_3UTR <- hlaModelFromObj(get(load('models/path_to_model_HLA_G_3UTR.RData')))
+model_HLA_G_5UTR <- hlaModelFromObj(get(load('models/path_to_model_HLA_G_5UTR.RData')))
 
 # run imputation
 imputed_MICA  <- predict(model_MICA, genotypes, type='response+prob', match.type='Position', cl=cl)

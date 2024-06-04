@@ -4,7 +4,7 @@ Repository for code, summary statistics and imputation reference panels for MICA
 
 Tammi S, Koskela S, Blood Service Biobank, Hyvärinen K, Partanen J, Ritari J: Accurate multi-population imputation of MICA, MICB, HLA-E, HLA-F and HLA-G alleles from genome SNP data
 
-## code (./src)
+# code (./src)
 
 `imputation.R` example of running imputations for MICA, MICB, HLA-E, HLA-F, HLA-G, HLA-G 3'UTR and HLA-G 5'UTR
 
@@ -21,7 +21,7 @@ If imputing non-Finnish data, we recommend using models V-VII. For Finnish data,
 Models fitted for the Illumina Global Screening Array (GSA) SNP content in human genome build hg38.
 Models for MICA, MICB, HLA-E and HLA-F have been trained using the Finnish and 1000 Genomes reference data. Models for HLA-G, HLA-G 3'UTR and HLA-G 5'UTR have been trained using Finnish reference data only. The SNP sets used in the training of the models are summarized in `Model_summary_statistics.xlsx`, sheet `GSA_models`.
 
-# PMRA (./models/PMRA/)
+## PMRA (./models/PMRA/)
 Models fitted for the ThermoFisher Precision Medicine Research Array (PMRA) SNP content in human genome build hg38.
 Models for MICA, MICB, HLA-E and HLA-F have been trained using the Finnish and 1000 Genomes reference data. Models for HLA-G, HLA-G 3'UTR and HLA-G 5'UTR have been trained using Finnish reference data only. The SNP sets used in the training of the models are summarized in `Model_summary_statistics.xlsx`, sheet `PMRA_models`.
 

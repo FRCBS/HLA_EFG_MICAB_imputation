@@ -8,7 +8,7 @@ Tammi S, Koskela S, Blood Service Biobank, Hyvärinen K, Partanen J, Ritari J: A
 
 `imputation.R` example of running imputations for MICA, MICB, HLA-E, HLA-F, HLA-G, HLA-G 3'UTR and HLA-G 5'UTR
 
-`functions.R` function for converting imputation results to dosage VCF
+`functions.R` function for converting imputation results to dosage VCF.
 
 # reference panels (./models/)
 
@@ -25,3 +25,4 @@ Models for MICA, MICB, HLA-E and HLA-F have been trained using the Finnish and 1
 Models fitted for the ThermoFisher Precision Medicine Research Array (PMRA) SNP content in human genome build hg38.
 Models for MICA, MICB, HLA-E and HLA-F have been trained using the Finnish and 1000 Genomes reference data. Models for HLA-G, HLA-G 3'UTR and HLA-G 5'UTR have been trained using Finnish reference data only. The SNP sets used in the training of the models are summarized in `Model_summary_statistics.xlsx`, sheet `PMRA_models`.
 
+For the imputation of the classical HLA genes, the most suitable of the many publicly available classical imputation panels can be used. The imputation output VCF files can be merged to the non-classical/MIC imputation output VCF e.g. using the bcftools 'concat' command.
